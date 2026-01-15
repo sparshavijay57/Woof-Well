@@ -1,0 +1,78 @@
+<!doctype html>
+<!-- Vaccination tracker (UI-only static entries and simple add form) -->
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vaccination — Woof Well</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body class="bg-cream">
+
+  <nav class="navbar navbar-light">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="./dashboard.html">
+      <span class="logo-badge">Woof Well</span>
+      <img
+        src="../assets/images/paw.svg"
+        alt="WoofWell logo"
+        class="logo-icon"
+      />
+    </a>
+  </div>
+</nav>
+
+
+  <main class="container py-4">
+    <div class="row justify-content-center">
+      <div class="col-md-9">
+        <div class="card soft-card p-4">
+          <div class="d-flex justify-content-between align-items-center">
+            <h3 class="mb-0">Vaccination records</h3>
+            <small class="text-muted">Manage upcoming and completed vaccinations (UI-only)</small>
+          </div>
+
+          <hr>
+
+          <!-- Vaccination list -->
+          <div id="vaxList" class="row g-3">
+            <!-- populated by JS with sample entries -->
+          </div>
+
+          <hr>
+
+          <!-- Add new vaccine (UI-only) -->
+          <h6 class="mb-2">Add a vaccine record</h6>
+          <form id="vaxForm" class="row g-2 align-items-end">
+            <div class="col-md-5">
+              <label class="form-label">Vaccine name</label>
+              <input id="vaxName" class="form-control" placeholder="Rabies">
+            </div>
+
+            <div class="col-md-3">
+              <label class="form-label">Date given</label>
+              <input id="vaxGiven" type="date" class="form-control">
+            </div>
+
+            <div class="col-md-3">
+              <label class="form-label">Next due</label>
+              <input id="vaxNext" type="date" class="form-control">
+            </div>
+
+            <div class="col-md-1">
+              <button id="addVax" type="button" class="btn btn-primary rounded-pill">Add</button>
+            </div>
+          </form>
+
+          <p class="text-muted small mt-3">Disclaimer: Keep official records with your veterinarian. This is a personal tracker only.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
