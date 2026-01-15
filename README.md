@@ -14,4 +14,4 @@ WoofWell is a frontend-only MVP for a dog care and wellness tracker. The project
 
 ## Notes
 
-This is a UI-focused project with no backend or data persistence. All features are for demo / UI only.
+This is a UI-focused project with no backend or data persistence. All features are for demo/UI only.
