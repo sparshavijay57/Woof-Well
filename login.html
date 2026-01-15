@@ -1,0 +1,56 @@
+<!doctype html>
+<!-- Login UI-only page. Redirects to dashboard. -->
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Log in — WoofWell</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body class="bg-cream">
+
+  <nav class="navbar navbar-light">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+  <span class="logo-badge">WoofWell</span>
+  <img src="../assets/images/paw.svg" alt="WoofWell logo" class="logo-icon"/>
+      </a>
+
+    </div>
+  </nav>
+
+  <main class="container py-5">
+    <div class="row justify-content-center">
+      <div class="col-md-6 col-lg-4">
+        <div class="card soft-card p-4">
+          <h2 class="mb-3">Welcome back</h2>
+          <form id="loginForm">
+            <div class="mb-3">
+              <label for="liEmail" class="form-label">Email</label>
+              <input type="email" id="liEmail" class="form-control" placeholder="you@example.com" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="liPassword" class="form-label">Password</label>
+              <input type="password" id="liPassword" class="form-control" placeholder="Password" required>
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center">
+              <a class="small text-muted" href="#">Forgot?</a>
+              <button type="submit" class="btn btn-primary rounded-pill">Log in</button>
+            </div>
+          </form>
+        </div>
+
+        <p class="text-center text-muted small mt-3">No real authentication — this is a UI-only demo.</p>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
